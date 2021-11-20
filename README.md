@@ -38,12 +38,15 @@ $ npm install
 $ npm run start
 
 5. 安裝成功會出現此訊息：
-Listening on http://localhost:3000
+Express is listening on http://localhost:3000
 
 6. 打開瀏覽器，並進入到此網址。
 http://localhost:3000
+
 http://localhost:3000/about
+
 http://localhost:3000/portfolio
+
 http://localhost:3000/contact
 
 
