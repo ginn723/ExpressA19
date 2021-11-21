@@ -13,30 +13,12 @@ app.set('view engine', 'hbs')
 app.use(express.static('public'))
 
 
-app.get('/', (req, res) => {
-  res.render('homepage', {
-    title: '首頁' //傳入頁面title
+app.get('/:page', (req, res) => {
+  const page = req.params.page
+  res.render(page, {
+    title: page //傳入頁面title
   })
 })
-
-app.get('/about', (req, res) => {
-  res.render('about', {
-    title: 'About'
-  })
-})
-
-app.get('/portfolio', (req, res) => {
-  res.render('portfolio', {
-    title: 'Portfolio'
-  })
-})
-
-app.get('/contact', (req, res) => {
-  res.render('contact', {
-    title: 'Contact'
-  })
-})
-
 
 
 app.listen(port, () => {
